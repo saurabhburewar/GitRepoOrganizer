@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #05090c;
+  overflow: hidden;
+}
+
+.page {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.headerbox {
+  float: left;
+  width: 39%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.headBanner {
+  width: 60%;
+  height: 60%;
+  border-bottom-left-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+  background: #0d1117;
+}
+.bannerNameBox {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+#bannerPic {
+  position: absolute;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 35%;
+  height: 53%;
+  top: 20%;
+  left: 15%;
+  border-radius: 1000px;
+}
+.bannerName {
+  position: absolute;
+  width: 60%;
+  height: 40%;
+  top: 50%;
+  left: 30%;
+  border-radius: 1.5em;
+  background: #0d1117;
+}
+#bannerName1 {
+  width: 80%;
+  height: 50%;
+  color: #fff;
+  padding-left: 15%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+}
+#bannerName2 {
+  width: 80%;
+  height: 50%;
+  color: #fff;
+  padding-left: 15%;
+  font-size: 1em;
+  display: flex;
+  align-items: flex-start;
+}
+.bannerlinkBox {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+}
+#bannerlinkBox1 {
+  width: 60%;
+  height: 100%;
+}
+.bannerlinks {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  color: #fff;
+  text-decoration: none;
+}
+.bannerlinks:hover {
+  text-decoration: underline;
+}
+
+.contentbox {
+  float: left;
+  width: 60%;
+  height: 100%;
+}
+.listheader {
+  float: left;
+  width: 90%;
+  padding-left: 10%;
+  height: 15%;
+  color: #fff;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+}
+.listbox {
+  float: left;
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+#listboxin {
+  float: left;
+  width: 70%;
+  height: 100%;
+}
+#contriBox {
+  float: left;
+  width: 100%;
+}
+#contriHead {
+  float: left;
+  width: 100%;
+  color: #ebedd9;
+  font-size: 1.3em;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.contriItem {
+  float: left;
+  width: 90%;
+  padding-left: 10%;
+  padding-bottom: 4%;
+  color: #c4c6c1;
+  font-size: 1em;
+  text-decoration: none;
+}
+.contriItem:hover {
+  text-decoration: underline;
+}
+
+.groupBox {
+  float: left;
+  width: 100%;
+  border-bottom: 2px solid #191e25;
+}
+.groupHead {
+  float: left;
+  width: 100%;
+  color: #ebedd9;
+  font-size: 1.3em;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.groupItem {
+  float: left;
+  width: 90%;
+  padding-left: 10%;
+  padding-bottom: 4%;
+  color: #c4c6c1;
+  font-size: 1em;
+  text-decoration: none;
+}
+.groupItem:hover {
+  text-decoration: underline;
+}
