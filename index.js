@@ -125,12 +125,14 @@ function changePage(userdata) {
 
 fetch(`https://api.github.com/users/${username}`)
     .then(response => response.json())
-    .then(userdata => changePage(userdata))
-
-fetch(`https://api.github.com/users/${username}/repos?type=owner`)
-    .then(response => response.json())
-    .then(data => display(data))
-
-fetch(`https://api.github.com/users/${username}/repos?type=member`)
-    .then(res => res.json())
-    .then(data1 => displaycontri(data1))
+    .then(userdata => {
+        changePage(userdata);
+        fetch(`https://api.github.com/users/${username}/repos?type=owner`)
+            .then(response => response.json())
+            .then(data => {
+                display(data);
+                fetch(`https://api.github.com/users/${username}/repos?type=member`)
+                    .then(res => res.json())
+                    .then(data1 => displaycontri(data1))
+            })
+    })
