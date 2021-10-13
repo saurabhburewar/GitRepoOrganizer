@@ -10,7 +10,9 @@ It is a easy to read and convenient repository viewer for Github. It can also gr
 4. Post the URL for the Github page in your [introduction README file](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme).
 
 ## Grouping repos
-1. For grouping, you need to follow a simple naming convention for your repos.
-All repos should be named in the manner - '{Group name}\_{Repo name}'
+1. For grouping, you need to follow a simple naming convention for your repos.  
+All repos should be named in the manner - '{Group name}\_{Repo name}'  
+For example, if you have 3 repos named 'Tree', 'Boosting', 'SVM' and you want to put them under a group named 'ML', then rename all 3 repos as 'ML_Tree', 'ML_Boosting', 'SVM'.
+2. Don't use multiple underscores in your repo names.
 
 Here's what it looks like - https://saurabhburewar.github.io/GitRepoOrganizer/
