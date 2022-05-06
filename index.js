@@ -1,6 +1,15 @@
 groups = [];
 username = 'saurabhburewar';
 
+const tl = gsap.timeline({ defaults: { ease: "power1.out" }, repeat: -1, repeatDelay: 1});
+
+tl.to(".bannerneonbar2", { y: '500%', duration: 2, stagger: 0.25 });
+tl.to(".bannerneonbar2", { opacity: 0, duration: 1, stagger: 0.25, delay: -1 });
+tl.to('.bannerneonbar3', { x: "-400%", opacity: 1, duration: 2, stagger: 0.25, delay: -1 });
+tl.to(".bannerneonbar3", { opacity: 0, duration: 1, stagger: 0.25 });
+tl.to(".bannerneonbar1", { y: '500%', duration: 3, stagger: 0.25, delay: -4 });
+tl.to(".bannerneonbar1", { opacity: 0, duration: 1, stagger: 0.25, delay: -1 });
+
 function display(data) {
     for(let i = 0; i < data.length; i++) {
         let name = data[i].name;
@@ -121,7 +130,6 @@ function changePage(userdata) {
         document.getElementById('bannerlinkBox1').appendChild(ediv);
     }
 }
-
 
 fetch(`https://api.github.com/users/${username}`)
     .then(response => response.json())
