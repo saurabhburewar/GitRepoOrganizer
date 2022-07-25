@@ -135,11 +135,11 @@ fetch(`https://api.github.com/users/${username}`)
     .then(response => response.json())
     .then(userdata => {
         changePage(userdata);
-        fetch(`https://api.github.com/users/${username}/repos?type=owner`)
+        fetch(`https://api.github.com/users/${username}/repos?per_page=100&type=owner`)
             .then(response => response.json())
             .then(data => {
                 display(data);
-                fetch(`https://api.github.com/users/${username}/repos?type=member`)
+                fetch(`https://api.github.com/users/${username}/repos?per_page=100&type=member`)
                     .then(res => res.json())
                     .then(data1 => displaycontri(data1))
             })
