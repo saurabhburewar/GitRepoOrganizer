@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Iceland&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Titillium Web", sans-serif; */
+  font-family: "Exo 2", sans-serif;
+
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #010107;
+  overflow: hidden;
+}
+
+.page {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.headerbox {
+  float: left;
+  width: 39%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.headBanner {
+  position: relative;
+  width: 60%;
+  height: 60%;
+  background: transparent;
+}
+.bannerneon1 {
+  position: absolute;
+  width: 100%;
+  height: 130%;
+  box-shadow:
+    0 0 1px 1px #fff7f7,   
+    0 0 5px 3px #fc8efe, 
+    0 0 15px 1px #f541f9,
+  
+    inset 0 0 20px 1px #f541f9,
+    inset 0 0 5px 1px #fc8efe,
+    inset 0 0 3px 2px #fff7f7;
+  transform: perspective(10em) rotateY(10deg) translateY(-15%) translateX(7%);
+  z-index: -10;
+  -webkit-box-reflect: below 20px;
+}
+.bannerneonbar1 {
+  position: absolute;
+  top: -20%;
+  height: 20%;
+  width: 1%;
+  background: #f541f9;
+  filter: blur(5px);
+}
+.bannerneonbar2 {
+  position: absolute;
+  top: -20%;
+  right: 0;
+  height: 20%;
+  width: 2%;
+  background: #f541f9;
+  filter: blur(10px);
+}
+.bannerneonbar3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2%;
+  width: 20%;
+  background: #f541f9;
+  filter: blur(10px);
+  opacity: 0;
+}
+
+.bannerNameBox {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+#bannerPic {
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  top: 12%;
+  left: 30%;
+  border-radius: 1000px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bannerName {
+  background: #010107;
+  position: absolute;
+  width: 60%;
+  height: 35%;
+  top: 60%;
+  left: 20%;
+  box-shadow: 0 0 5px 5px #010107;
+}
+#bannerName1 {
+  width: 80%;
+  height: 50%;
+  color: #fff;
+  font-family: "Iceland", cursive;
+  padding-left: 15%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+}
+#bannerName2 {
+  width: 80%;
+  height: 50%;
+  color: #fff;
+  padding-left: 15%;
+  font-size: 0.8em;
+  display: flex;
+  align-items: flex-start;
+}
+.bannerlinkBox {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+}
+#bannerlinkBox1 {
+  width: 60%;
+  height: 100%;
+}
+.bannerlinks {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  font-size: 13px;
+  color: #ebedd9;
+  text-shadow: 0 0 10px #ebedd9;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+.bannerlinks:hover {
+  color: #fa79fc;
+  text-shadow: 0 0 10px #fa79fc;
+}
+
+.contentbox {
+  float: left;
+  width: 60%;
+  height: 100%;
+}
+.listheader {
+  float: left;
+  width: 90%;
+  padding-left: 10%;
+  height: 15%;
+  color: #ffbef1;
+  font-family: "Iceland", cursive;
+  text-shadow: 0 0 10px #f541f9, 0 0 21px #f541f9;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+}
+.listbox {
+  float: left;
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+#listboxin {
+  float: left;
+  width: 70%;
+  height: 100%;
+}
+#contriBox {
+  float: left;
+  width: 100%;
+}
+#contriHead {
+  float: left;
+  width: 100%;
+  color: #ebedd9;
+  font-family: "Iceland", cursive;
+  text-shadow: 0 0 10px #ebedd9;
+  font-size: 1.5em;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.contriItem {
+  float: left;
+  width: 90%;
+  padding-left: 10%;
+  padding-bottom: 4%;
+  color: #c4c6c1;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+.contriItem:hover {
+  text-decoration: underline;
+}
+
+.groupBox {
+  float: left;
+  width: 100%;
+  /* border-bottom: 2px solid #191e25; */
+}
+.groupHead {
+  float: left;
+  width: 100%;
+  color: #ebedd9;
+  font-family: "Iceland", cursive;
+  text-shadow: 0 0 10px #ebedd9;
+  font-size: 1.5em;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.groupItem {
+  float: left;
+  width: 90%;
+  padding-left: 10%;
+  padding-bottom: 4%;
+  color: #c4c6c1;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+.groupItem:hover {
+  text-decoration: underline;
+}
