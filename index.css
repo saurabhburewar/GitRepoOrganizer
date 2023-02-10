@@ -199,11 +199,34 @@ body {
   text-decoration: underline;
 }
 
-@media only screen and (min-width: 560px) {
+@media only screen and (max-width: 560px) {
   .headerbox {
     display: none;
   }
   .contentbox{
     width: 100%;
+  }
+}
+
+@media only screen and (max-height: 560px) {
+  #bannerName1 {
+    width: 80%;
+    height: 50%;
+    color: #fff;
+    font-family: "Iceland", cursive;
+    padding-left: 15%;
+    font-size: 0.5rem;
+  }
+  #bannerName2 {
+    width: 80%;
+    height: 50%;
+    color: #fff;
+    padding-left: 15%;
+    font-size: 0.3em;
+    display: flex;
+    align-items: flex-start;
+  }
+  .bannerlinks {
+    font-size: 7px;
   }
 }
